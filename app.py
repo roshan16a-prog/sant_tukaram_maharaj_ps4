@@ -8,7 +8,7 @@ from src.ui.components import apply_theme, card, animated_header, status_indicat
 from src.utils.auth import Auth
 from src.utils.database import db
 
-# Page Configuration
+# Page Configurat
 st.set_page_config(
     page_title=Config.APP_NAME,
     page_icon="🎓",
