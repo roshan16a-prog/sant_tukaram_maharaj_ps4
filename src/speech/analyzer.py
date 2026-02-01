@@ -19,7 +19,7 @@ class SpeechAnalyzer:
                     text = self.recognizer.recognize_google(audio_data)
                     return text
                 except sr.UnknownValueError:
-                    return "" # Unintelligible speech
+                    return "" # Unintelligible 
                 except sr.RequestError:
                     return "" # API unreachable
         except Exception as e:
