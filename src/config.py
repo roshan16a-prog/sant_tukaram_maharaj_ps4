@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    APP_NAME = "PrepPro - AI Interview Coach"
+    APP_NAME = "InterviewIQ - AI Interview Coach"
     VERSION = "0.1.0"
     
     # API Keys

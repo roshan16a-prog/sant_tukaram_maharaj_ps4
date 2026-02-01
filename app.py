@@ -25,7 +25,7 @@ st.set_page_config(
 )
 
 def show_login_page():
-    st.markdown("<div style='text-align: center; margin-bottom: 2rem;'><h1>🎓 PrepPro Login</h1></div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; margin-bottom: 2rem;'><h1>🎓 InterviewIQ Login</h1></div>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
@@ -184,16 +184,9 @@ def show_dashboard():
                         
                     if not st.session_state.is_recording:
                         if st.button("🔴 Start Recording", type="primary"):
-                            try:
-                                manager.start_recording()
-                                # Check if it actually started (flag check)
-                                if manager.recorder.is_recording:
-                                    st.session_state.is_recording = True
-                                    st.rerun()
-                                else:
-                                    st.error("Audio recording unavailable (PyAudio missing). Cannot start session.")
-                            except Exception as e:
-                                st.error(f"Recording failed: {e}")
+                            manager.start_recording()
+                            st.session_state.is_recording = True
+                            st.rerun()
                     else:
                         st.info("🎙️ Recording in progress...")
                         if st.button("⏹️ Stop & Submit"):
@@ -315,11 +308,11 @@ def show_dashboard():
                     st.error("Failed to delete account.")
 
     elif page == "About":
-        animated_header("About PrepPro")
+        animated_header("About InterviewIQ")
         
         st.markdown("""
         ### 🚀 Accelerate Your Interview Prep
-        **PrepPro** is your personal AI Interview Coach. We combine cutting-edge **Computer Vision**, **Speech Analysis**, and **Large Language Models** to give you 360-degree feedback on your performance.
+        **InterviewIQ** is your personal AI Interview Coach. We combine cutting-edge **Computer Vision**, **Speech Analysis**, and **Large Language Models** to give you 360-degree feedback on your performance.
         
         #### How it Works
         1.  **Start a Session**: Choose your domain (HR, Tech, etc.) and number of questions.

@@ -68,7 +68,7 @@ def app_header():
             <div style="display: flex; align-items: center; gap: 12px;">
                  <div style="font-size: 28px;">🎓</div>
                  <div>
-                    <h2 style="margin: 0; color: white; font-size: 1.5rem; background: linear-gradient(135deg, #667EEA 0%, #e0e0e0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">PrepPro</h2>
+                    <h2 style="margin: 0; color: white; font-size: 1.5rem; background: linear-gradient(135deg, #667EEA 0%, #e0e0e0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">InterviewIQ</h2>
                  </div>
             </div>
             <div style="color: #B0B3B8; font-size: 0.9rem; font-weight: 500;">
