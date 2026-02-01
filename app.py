@@ -1,14 +1,6 @@
 import streamlit as st
 from src.config import Config
 
-# Page Configuration
-st.set_page_config(
-    page_title=Config.APP_NAME,
-    page_icon="🎓",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
 import streamlit as st
 import time
 from src.config import Config
@@ -272,7 +264,7 @@ def show_dashboard():
                                 pass
                                 
                             # Essential for Streamlit loop to allow interruption
-                            time.sleep(0.05) 
+                            time.sleep(0.1) 
                         
                         cap.release()
             else:
