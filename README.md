@@ -1,5 +1,5 @@
 # Sant_Tukaram_Maharaj_PS4
-# PrepPro - AI Interview Coach 🎓
+# InterviewIQ - AI Interview Coach 🎓
 
 PrepPro is a cutting-edge AI-powered interview coaching platform designed to help job seekers improve their interview skills. It combines **Computer Vision**, **Speech Analysis**, and **Large Language Models** to provide comprehensive feedback on performance.
 
